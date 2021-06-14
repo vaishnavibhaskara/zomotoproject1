@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* TO use Box Model  */
+}
+
+body{
+    font-family: 'signika Negative','acme',sans-serif;
+    background-color: #868e9e;
+    color: rgb(36, 36, 70);
+}
+
+.primary__button{
+    background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  color: #fff;
+  cursor: pointer;
+  margin-top:20px;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    height: 80px;
+}
+
+.nav__brand{
+    width: 120px;
+}
+
+.navbar__logo{
+    width: 100%;
+}
+
+
+.nav__item:hover{
+    border: 2px solid pink;
+}
+
+.container{
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container__img{
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.content__img{
+    width: 100%;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.content__bg1 {
+    position:absolute;
+    top:0;
+    left: 0;
+
+    height: 125%;
+    width:100%;
+    z-index: -3;
+}
+
+.container__line{
+    font-size: 20px;
+    padding: 35px 10px;
+}
+
+.nav__item{
+    background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.explore__menu__text{
+    text-align: center;
+}
+
+.food__cards{
+    background-color: #fff;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.food__card__container{
+    width:100%;
+
+
+}
+
+.food__img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.food__card__description{
+    padding: 12px;
+}
+
+.explore__menu__text{
+    margin: 20px 0;
+}
+
+.view__more__button{
+    padding: 15px;
+    margin-top:10px;
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .navbar{
+        justify-content: space-between;
+        padding-left: 30px; 
+        padding-right: 30px;
+    }
+    body{
+        font-family: 'anton','signika Negative','acme',sans-serif;
+    }
+
+    .container__box{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .container__line{
+        margin-top: 30px;
+    }
+
+    .explore__our__menu{
+        position: relative;
+        margin-top: 70px;
+    }
+
+    .explore__menu__lists{
+        display:flex;
+        gap: 10px;  
+    }
+
+    .explore__menu__gradient__bg{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        transform: skewY(-5deg);
+        z-index: -3;
+    }
+
+    .explore__menu__text{
+        font-size: 40px;
+        margin-bottom: 32px;
+    }
+    
+    .food__cards{
+        margin: 10px;
+    }
+
+    #pizza__card{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    .view__more__button{
+        background-image: none;
+        margin-top: 30px;
+        color:rgb(150, 8, 32);
+        font-size: 20px;
+    }
+
+
+
+    
+
+@media (min-width: 1020px){
+    body{
+        font-family: 'anton','signika Negative','acme',sans-serif;
+    }
+
+    .container{
+        max-width: auto;
+        margin: 0 150px;
+    }
+
+    .primary__button{
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .nav__brand{
+        width: 200px;
+    }
+    .nav__item{
+        padding:15px;
+        font-size: 20px;
+    }
+
+    .container__box{
+        margin-top: 20px;
+    }
+     
+    .container__line{
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .explore__menu__gradient__bg{
+        width: 100%;
+        height:100%
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+          );   
+    }
+
+    .explore__menu__text{
+        font-size: 60px;
+    }
+
+    .food__card__description{
+        font-size: 30px;
+    }
+    .view__more__button{
+        width: 300px;
+        margin-left: 200px;
+    }
+
+    .view__more__button:hover{
+        width:80% ;
+        transition: ease 1s ;
+    }
+
+
+
+
+@media (min-width:1300px) {
+    .container{
+        max-width: 1200;
+    }
+}
